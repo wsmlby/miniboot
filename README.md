@@ -4,7 +4,7 @@ This is a extreme minimal OS to use as a placeholder in Proxmox or other virtual
 
 It boot instantly, use almost no RAM / CPU (Proxmox requires a minimal of 16MB RAM though) and does not require any disk space.
 
-# Usage
+## Usage
 Download this image with wget on the Proxmox host:
 
 ```bash
@@ -22,6 +22,11 @@ qm set <VMID> --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-<VMID>-disk-0
 
 Now you can start the VM, it will boot instantly and show a simple message. You can use this VM as a placeholder for managing dependencies or testing purposes.
 
+## Build from source
+
+```
+nasm -f bin minimal-os.asm -o minimal-os.raw
+```
 
 ## Credits
 This project is inspired by the work of [@cfenollosa](https://github.com/cfenollosa/os-tutorial/tree/master)
