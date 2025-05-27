@@ -11,7 +11,7 @@ Download this image with wget on the Proxmox host:
 wget https://github.com/wsmlby/miniboot/raw/refs/heads/master/minimal-os.raw
 ```
 
-then, create a VM with minimal resouce, no disk, no network. note the VM ID. Make sure to use SeaBIOS as the firmware.
+then, create a VM with minimal resouce, no disk, no network. note the VM ID. Make sure you delete the DVD drive from the vm if it was created by default.
 
 Then, run the following command to import the image:
 
